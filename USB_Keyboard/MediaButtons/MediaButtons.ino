@@ -16,6 +16,7 @@ Bounce button2 = Bounce(2, 10);  // for most mechanical pushbuttons
 Bounce button3 = Bounce(3, 10);
 Bounce button4 = Bounce(4, 10);  // if a button is too "sensitive" 
 Bounce button5 = Bounce(5, 10);  // you can increase this time.
+Bounce button6 = Bounce(6, 10);
 
 void setup() {
   // Configure the pins for input mode with pullup resistors.
@@ -30,6 +31,7 @@ void setup() {
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
   pinMode(5, INPUT_PULLUP);
+  pinMode(6, INPUT_PULLUP);
 }
 
 void loop() {
@@ -42,47 +44,39 @@ void loop() {
   button3.update();
   button4.update();
   button5.update();
+  button6.update();
 
   // Check each button for "falling" edge.
   // falling = high (not pressed - voltage from pullup resistor)
   //           to low (pressed - button connects pin to ground)
   if (button0.fallingEdge()) {
-    Keyboard.set_media(KEY_MEDIA_PREV_TRACK);
-    Keyboard.send_now();	// send the button press
-    Keyboard.set_media(0);
-    Keyboard.send_now();	// send the button release
+    Keyboard.press(KEY_MEDIA_PREV_TRACK);
+    Keyboard.release(KEY_MEDIA_PREV_TRACK);
   }
   if (button1.fallingEdge()) {
-    Keyboard.set_media(KEY_MEDIA_PLAY_PAUSE);
-    Keyboard.send_now();
-    Keyboard.set_media(0);
-    Keyboard.send_now();
+    Keyboard.press(KEY_MEDIA_PLAY_PAUSE);
+    Keyboard.release(KEY_MEDIA_PLAY_PAUSE);
   }
   if (button2.fallingEdge()) {
-    Keyboard.set_media(KEY_MEDIA_NEXT_TRACK);
-    Keyboard.send_now();
-    Keyboard.set_media(0);
-    Keyboard.send_now();
+    Keyboard.press(KEY_MEDIA_NEXT_TRACK);
+    Keyboard.release(KEY_MEDIA_NEXT_TRACK);
   }
   if (button3.fallingEdge()) {
-    Keyboard.set_media(KEY_MEDIA_VOLUME_DEC);
-    Keyboard.send_now();
-    Keyboard.set_media(0);
-    Keyboard.send_now();
+    Keyboard.press(KEY_MEDIA_VOLUME_DEC);
+    Keyboard.release(KEY_MEDIA_VOLUME_DEC);
   }
   if (button4.fallingEdge()) {
-    Keyboard.set_media(KEY_MEDIA_VOLUME_INC);
-    Keyboard.send_now();
-    Keyboard.set_media(0);
-    Keyboard.send_now();
+    Keyboard.press(KEY_MEDIA_VOLUME_INC);
+    Keyboard.release(KEY_MEDIA_VOLUME_INC);
   }
   if (button5.fallingEdge()) {
-    Keyboard.set_media(KEY_MEDIA_EJECT);
-    Keyboard.send_now();
+    Keyboard.press(KEY_SYSTEM_POWER_DOWN);
+    Keyboard.release(KEY_SYSTEM_POWER_DOWN);
+  }
+  if (button6.fallingEdge()) {
+    Keyboard.press(KEY_MEDIA_EJECT);
     delay(300);  // Mac OS-X will not recognize a very short eject press
-    Keyboard.set_media(0);
-    Keyboard.send_now();
+    Keyboard.release(KEY_MEDIA_EJECT);
   }
 
 }
-
