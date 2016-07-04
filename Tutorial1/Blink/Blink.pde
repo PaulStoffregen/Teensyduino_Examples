@@ -6,8 +6,8 @@
 
 // Teensy 2.0 has the LED on pin 11
 // Teensy++ 2.0 has the LED on pin 6
-// Teensy 3.0 has the LED on pin 13
-const int ledPin = 11;
+// Teensy 3.x / Teensy LC have the LED on pin 13
+const int ledPin = 13;
 
 // the setup() method runs once, when the sketch starts
 
