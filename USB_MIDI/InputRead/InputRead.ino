@@ -35,6 +35,11 @@ void processMIDI(void) {
   data2 = usbMIDI.getData2();     // second data byte of message, 0-127
   cable = usbMIDI.getCable();     // which virtual cable with MIDIx8, 0-7
 
+  // uncomment if using multiple virtual cables
+  //Serial.print("cable ");
+  //Serial.print(cable, DEC);
+  //Serial.print(": ");
+
   // print info about the message
   //
   switch (type) {
