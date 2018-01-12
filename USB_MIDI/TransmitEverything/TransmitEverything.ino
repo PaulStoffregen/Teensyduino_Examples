@@ -74,7 +74,7 @@ void sendNextMessage() {
       usbMIDI.sendAfterTouch(108, channel, cable);
       break;
     case 5:
-      usbMIDI.sendPitchBend(9103, channel, cable);
+      usbMIDI.sendPitchBend(911, channel, cable);
       break;
     case 6:
       usbMIDI.sendSysEx(sizeof(buf), buf, true, cable);
