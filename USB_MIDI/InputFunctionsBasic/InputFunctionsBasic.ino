@@ -32,8 +32,8 @@ void loop() {
 
 
 void myNoteOn(byte channel, byte note, byte velocity) {
-  // When using MIDIx8, usbMIDI.getCable() can be used to read
-  // which of the 8 virtual MIDI cables received this message.
+  // When using MIDIx4 or MIDIx16, usbMIDI.getCable() can be used
+  // to read which of the virtual MIDI cables received this message.
   Serial.print("Note On, ch=");
   Serial.print(channel, DEC);
   Serial.print(", note=");
