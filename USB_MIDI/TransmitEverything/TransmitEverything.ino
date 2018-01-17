@@ -52,6 +52,12 @@ void loop() {
       note = 0;
     }
   }
+
+  // MIDI Controllers should discard incoming MIDI messages.
+  // http://forum.pjrc.com/threads/24179-Teensy-3-Ableton-Analog-CC-causes-midi-crash
+  while (usbMIDI.read()) {
+    // ignore incoming messages
+  }
 }
 
 void sendNextMessage() {

@@ -46,6 +46,12 @@ void loop() {
   peakDetect(piezo);
   // Add other tasks to loop, but avoid using delay() or waiting.
   // You need loop() to keep running rapidly to detect Piezo peaks!
+
+  // MIDI Controllers should discard incoming MIDI messages.
+  // http://forum.pjrc.com/threads/24179-Teensy-3-Ableton-Analog-CC-causes-midi-crash
+  while (usbMIDI.read()) {
+    // ignore incoming messages
+  }
 }
 
 
