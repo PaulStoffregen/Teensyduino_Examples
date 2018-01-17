@@ -5,6 +5,13 @@
  * that one MIDI device, custom names are much easier to
  * use when selecting each device in MIDI software on
  * your PC or Mac.  The custom name is in the "name.c" tab.
+ *
+ * Windows and Macintosh systems often cache USB info.
+ * After changing the name, you may need to test on a
+ * different computer to observe the new name, or take
+ * steps to get your operating system to "forget" the
+ * cached info.  (TODO: wanted... can anyone contribute
+ * instructions for these systems)
  * 
  * You must select MIDI from the "Tools > USB Type" menu
  * 
