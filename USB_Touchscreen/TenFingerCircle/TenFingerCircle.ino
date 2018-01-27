@@ -16,8 +16,12 @@
    To see the result, open this page with Goolge Chrome:
    http://www.repaa.net/draw.html
 
-   After pressing the button 14 times, you should see this:
+   After pressing the button 5 times, you should see this:
    https://forum.pjrc.com/attachment.php?attachmentid=12750&d=1516978091
+
+   This example has been tested on Windows 10 and Ubuntu 14.04.
+   Macintosh High Sierra 10.13.2 does not work, and also does not
+   respond properly to a Dell P2314T touch-enabled monitor.
 
    You must select Touch Screen in the "Tools > USB Type" menu
 
