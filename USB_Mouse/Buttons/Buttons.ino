@@ -71,6 +71,8 @@ void setup() {
   // was on this screen.  Setting the correct screen size allows you
   // to use the actual pixel coordinates of your screen.
   Mouse.screenSize(1920, 1080);
+  // screenSize() is not supported on Teensy 2.0 & Teensy++ 2.0.
+  // Delete this line to run on 8 bit Teensy boards.
 }
 
 
@@ -127,6 +129,8 @@ void loop() {
 
   if (button21.fallingEdge()) {
     Mouse.moveTo(10, 10);  // move near upper left corner (Apple menu)
+    // moveTo() is not supported on Teensy 2.0 & Teensy++ 2.0.
+    // Delete this line to run on 8 bit Teensy boards.
   }
   if (button22.fallingEdge()) {
     Mouse.moveTo(960, 540);   // move to the screen center
