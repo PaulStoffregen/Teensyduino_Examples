@@ -13,6 +13,10 @@
 
    You must select MIDI from the "Tools > USB Type" menu
 
+   On Linux systems, use "amidi" to send from command line:
+     amidi -p hw:3,0,0 -S '90 68 64'
+     amidi -p hw:3,0,0 -S 'F0 43 10 4C 00 00 7E 00 F7'
+
    This example code is in the public domain.
 */
 
