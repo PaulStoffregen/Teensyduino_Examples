@@ -31,3 +31,5 @@ void loop() {
   }
 }
 
+// To name the individual ports for MIDIx4 and MIDIx16
+// https://forum.pjrc.com/threads/50043?p=260134#post260134
