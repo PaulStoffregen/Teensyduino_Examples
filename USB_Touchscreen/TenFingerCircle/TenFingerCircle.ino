@@ -16,6 +16,11 @@
    To see the result, open this page with Goolge Chrome:
    http://www.repaa.net/draw.html
 
+   Alternate test site if repaa.net is down:
+   https://tecagile.com/online-touch-screen-test/
+   (Thanks to PaulS on the forum for this tip)
+   https://forum.pjrc.com/threads/71464?p=315652&viewfull=1#post315652
+
    After pressing the button 5 times, you should see this:
    https://forum.pjrc.com/attachment.php?attachmentid=12750&d=1516978091
 
