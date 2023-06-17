@@ -8,11 +8,11 @@
    Or a wire or paperclip may be touched between GND and pin
    14 to start the drawing.
 
-   To see the result, open this page with Goolge Chrome:
+   To see the result, open this page with Google Chrome:
    http://www.repaa.net/draw.html
 
    Alternate test site if repaa.net is down:
-   https://tecagile.com/online-touch-screen-test/
+   https://naqtn.github.io/WBBMTT/
    (Thanks to PaulS on the forum for this tip)
    https://forum.pjrc.com/threads/71464?p=315652&viewfull=1#post315652
 
