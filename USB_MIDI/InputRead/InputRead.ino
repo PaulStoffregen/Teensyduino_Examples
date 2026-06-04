@@ -33,9 +33,9 @@ void processMIDI(void) {
   channel = usbMIDI.getChannel(); // which MIDI channel, 1-16
   data1 = usbMIDI.getData1();     // first data byte of message, 0-127
   data2 = usbMIDI.getData2();     // second data byte of message, 0-127
-  cable = usbMIDI.getCable();     // which virtual cable with MIDIx8, 0-7
 
   // uncomment if using multiple virtual cables
+  //cable = usbMIDI.getCable();   // which virtual cable with MIDIx4 or MIDIx16, 0-15
   //Serial.print("cable ");
   //Serial.print(cable, DEC);
   //Serial.print(": ");
